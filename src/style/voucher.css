@@ -1,0 +1,45 @@
+.voucher-container{
+    border: 1px solid rgb(167, 167, 167);
+    max-width: 900px;
+    min-width: 250px;
+    max-height: 250px;
+    min-height: 150px;
+    margin: 0px 5px 10px 5px ;
+    box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgba(172, 172, 172, 0.809);
+  }
+
+
+.voucher-img{
+    margin: 5px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(98, 98, 98);
+}
+
+.description-box{
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.646);
+    width: 90%;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+.price-box{
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.646);
+    width: 90%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.button-box{
+    margin: 5px 5px 5px 5px;
+}
+.offer-box{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.333)
+}

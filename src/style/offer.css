@@ -1,0 +1,18 @@
+.error{
+    color: red;
+}
+.success{
+    color: rgb(94,200,0);
+    background-color: rgb(74, 74, 74)
+}
+
+.offer-container{
+    border: 1px solid rgb(167, 167, 167);
+    max-width: 900px;
+    min-width: 250px;
+    max-height: 250px;
+    min-height: 150px;
+    margin: 0px 5px 10px 5px ;
+    box-shadow: -3px 3px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgba(172, 172, 172, 0.809);
+  }
