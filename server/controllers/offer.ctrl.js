@@ -41,7 +41,7 @@ module.exports = {
         .updateOne({_id}, req.body)
         .exec()
         .then((res)=>{
-            if(res.ok !== 1){
+            if(res.n !== 1){
                 return res.status(404).send({error: "failed to update offer"})
             }
         }).catch(next);

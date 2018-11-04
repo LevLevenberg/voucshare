@@ -40,6 +40,7 @@ module.exports = {
 
         Voucher
         .updateOne({_id},req.body)
+        .exec()
         .then(()=>{
             Voucher.find({})
             .then((vouchers)=>{
