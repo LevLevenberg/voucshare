@@ -19,9 +19,8 @@
     "validator": "^10.8.0"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "debug": "nodemon --inspect-drk index.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
-  },
-  "proxy": "http://localhost:3000"
+  }
 }
