@@ -5,7 +5,7 @@ import jwt_decode from 'jwt-decode';
 
 let path = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
 export const registerUser = (user, history) => dispatch => {
-    axios.post(path + '/api/user/auth/register', user)
+    axios.post(`${path}/api/user/auth/register`, user)
             .then(() => history.push('/login'))
             .catch(err => {
                 dispatch({
