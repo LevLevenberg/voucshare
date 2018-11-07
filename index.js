@@ -58,6 +58,6 @@ const server = createServer(app);
 
 server.listen(PORT, err => {
     if(err) throw err;
-    console.log('Server started')
+    console.log(`server started on ${PORT}`)
 })
 
