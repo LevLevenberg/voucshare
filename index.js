@@ -31,7 +31,7 @@ app.use('/api',require('./routes/location'));
 app.use((err,req,res,next)=>{
     res.status(442);//.send({err:err.message})
 })
-const PORT =5000
+const PORT = 5000
 app.listen(PORT, ()=>{
     console.log(`now listening on port ${PORT}`);
 });
