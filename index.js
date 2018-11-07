@@ -19,9 +19,6 @@ if(!dev){
     app.use(morgan('common'));
 
     app.use(express.static(path.resolve(__dirname, "client", "build")));
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-    });
 }
 
 if(dev){
@@ -50,9 +47,9 @@ app.use('/api',require('./routes/offer'));
 app.use('/api',require('./routes/category'));
 app.use('/api',require('./routes/location'));
 
-// app.use((err,req,res,next)=>{
-//     res.status(442);//.send({err:err.message})
-// })
+app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+});
 const server = createServer(app);
 
 server.listen(PORT, err => {
